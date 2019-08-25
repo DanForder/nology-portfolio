@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "typescript": "^3.5.3",
+    "tsc": "^1.20150623.0"
+  }
+}
