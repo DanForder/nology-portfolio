@@ -62,9 +62,9 @@ body #home #home-main header {
   min-width: 300px;
   max-width: 750px;
   height: 75%;
-  min-height: 350px;
+  min-height: 300px;
   max-height: 400px;
-  font-size: 2.75em;
+  font-size: 2em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -101,6 +101,27 @@ body #home #home-main header #title-box {
   padding: auto;
 }
 
+@media only screen and (max-width: 1000px) {
+  body #home #home-main header #title-box {
+    padding: 5%;
+  }
+  body #home #home-main header #title-box > * {
+    width: 100%;
+  }
+  body #home #home-main header #title-box h1 {
+    height: 35%;
+  }
+  body #home #home-main header #title-box h2 {
+    height: 65%;
+  }
+}
+
+@media only screen and (max-height: 565px) {
+  body #home #home-main header #title-box {
+    border: none;
+  }
+}
+
 body #home #home-main header #title-box > * {
   width: 100%;
   height: 50%;
@@ -108,32 +129,66 @@ body #home #home-main header #title-box > * {
 
 body #home #home-footer {
   width: 100%;
-  height: 20%;
-}
-
-body #home #home-footer l a {
+  height: 15%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+body #home #home-footer > * {
+  width: 100%;
+}
+
+body #home #home-footer #image-caption {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+body #home #home-footer #image-caption a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-body #home #home-footer l a div {
-  width: 20%;
+body #home #home-footer #image-caption a * {
+  padding: 5px;
+}
+
+body #home #home-footer #see-portfolio {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
 }
 
-body #home #home-footer l a p {
-  width: 80%;
+@media only screen and (max-width: 660px) {
+  #image-caption {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  #image-caption #image-description {
+    display: none;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
