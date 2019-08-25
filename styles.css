@@ -181,6 +181,70 @@ body #home #home-footer #see-portfolio {
   text-align: center;
 }
 
+body #portfolio {
+  background: #354f97;
+  min-height: 100vh;
+  width: 100vw;
+  padding: 0 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body #portfolio h2 {
+  text-align: center;
+  padding: 25px;
+}
+
+body #portfolio section {
+  border: aliceblue 2px solid;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+body #portfolio section article {
+  margin: 10px;
+  min-width: 250px;
+  width: 45%;
+  min-height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body #portfolio section article #pokedex-img {
+  width: 100%;
+  height: 100%;
+  background-image: url("img/pokedex-default.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
 @media only screen and (max-width: 660px) {
   #image-caption {
     -ms-flex-item-align: center;

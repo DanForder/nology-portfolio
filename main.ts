@@ -63,3 +63,12 @@ const changeCaption: number = setInterval((): void => {
 }, resetSpeed);
 
 type();
+
+//img swapping functions
+const pokedexDiv: HTMLElement = document.getElementById("pokedex-img");
+
+const switchImg = (image: string, website: string): void => {
+  if (website === "pokedex") {
+    pokedexDiv.style.backgroundImage = `url(${image})`;
+  }
+};

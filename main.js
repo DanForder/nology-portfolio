@@ -54,3 +54,10 @@ var changeCaption = setInterval(function () {
     type();
 }, resetSpeed);
 type();
+//img swapping functions
+var pokedexDiv = document.getElementById("pokedex-img");
+var switchImg = function (image, website) {
+    if (website === "pokedex") {
+        pokedexDiv.style.backgroundImage = "url(" + image + ")";
+    }
+};
