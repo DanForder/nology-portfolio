@@ -25,7 +25,7 @@ let index: number = 0;
 const htmlTypedText: HTMLSpanElement = document.getElementById("typed-text");
 const htmlCursor: HTMLSpanElement = document.getElementById("cursor");
 
-const cursorBlink: number = setInterval(() => {
+const cursorBlink: NodeJS.Timeout = setInterval(() => {
   if (isCursorVisible) {
     htmlCursor.style.opacity = "0";
     isCursorVisible = !isCursorVisible;
@@ -47,7 +47,7 @@ const randomArrayItem = (array: string[]): string => {
   return array[Math.floor(Math.random() * array.length)];
 };
 
-const changeCaption: number = setInterval((): void => {
+const changeCaption: NodeJS.Timeout = setInterval((): void => {
   index = 0;
   htmlTypedText.innerHTML = "";
   currentCaption = randomArrayItem(currentCaptionArray);
