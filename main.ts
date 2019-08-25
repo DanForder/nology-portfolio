@@ -35,8 +35,6 @@ const cursorBlink: number = setInterval(() => {
   }
 }, cursorBlinkSpeed);
 
-// htmlTypedText.innerHTML = currentCaption;
-
 const type = (): void => {
   if (index < currentCaption.length) {
     htmlTypedText.innerHTML += currentCaption.charAt(index);
@@ -48,8 +46,6 @@ const type = (): void => {
 const randomArrayItem = (array: string[]): string => {
   return array[Math.floor(Math.random() * array.length)];
 };
-
-type();
 
 const changeCaption: number = setInterval((): void => {
   index = 0;
@@ -65,3 +61,5 @@ const changeCaption: number = setInterval((): void => {
   }
   type();
 }, resetSpeed);
+
+type();

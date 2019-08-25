@@ -1,0 +1,277 @@
+html {
+  font-family: "Raleway", sans-serif;
+  /* font-family: 'Shadows Into Light', sans-serif; */
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)),
+    url(img/whangerei-heads.jpg);
+  /* background-image: url(img/whangerei-heads.jpg); */
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0;
+  height: 100vh;
+}
+
+body::-webkit-scrollbar {
+  width: 0;
+}
+
+/* navbar */
+
+nav {
+  width: 100vw;
+  position: absolute;
+  height: 10%;
+  font-size: 1.5em;
+  /* border: solid 2px white; */
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  height: 100%;
+}
+
+nav a img {
+  height: 100%;
+  min-height: 100px;
+}
+
+nav > ul {
+  /* width: 50%; */
+  float: right;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+  height: 100%;
+  margin: 0;
+  flex-wrap: wrap;
+}
+
+nav > a {
+  position: relative;
+  /* vertical-align: middle; */
+}
+
+ul li {
+  margin: 0 15px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* main section */
+
+#generic-main {
+  position: absolute;
+  height: 75vh;
+  width: 80vw;
+  margin-left: 10vw;
+  margin-top: 12.5vh;
+}
+
+#generic-main > section {
+  /* border: 2px solid white; */
+  // border-radius: 8px;
+  color: white;
+  background-color: rgba(79, 186, 231, 0.5);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  padding: 30px;
+}
+
+.skills-panel {
+  width: 40%;
+  height: 100%;
+  margin: auto;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.skills-panel::-webkit-scrollbar {
+  width: 0;
+}
+
+#double-subtitles {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  padding-bottom: 0px;
+}
+
+.skills-panel h2 {
+  text-align: center;
+  margin: 30px auto;
+  margin-bottom: 0px;
+}
+
+// accordion skill page
+
+.ac-container {
+  box-sizing: border-box;
+  width: 100%;
+  // height: 80%;
+  margin: auto;
+  text-align: left;
+}
+
+.ac-container label {
+  padding: 5px 20px;
+  position: relative;
+  z-index: 20;
+  display: block;
+  height: 50px;
+  cursor: pointer;
+  color: #777;
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.8);
+  line-height: 40px;
+  font-size: 19px;
+  background: #ffffff;
+  background: linear-gradient(top, #ffffff 1%, #eaeaea 100%);
+  box-shadow: 0px 0px 0px 1px rgba(155, 155, 155, 0.3),
+    1px 0px 0px 0px rgba(255, 255, 255, 0.9) inset,
+    0px 2px 2px rgba(0, 0, 0, 0.1);
+  // border-radius: 8px 8px 0 0;
+}
+
+.ac-container input:checked + label,
+.ac-container input:checked + label:hover {
+  background: #c6e1ec;
+  color: #3d7489;
+  text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.6);
+  box-shadow: 0px 0px 0px 1px rgba(155, 155, 155, 0.3),
+    0px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.ac-container input {
+  display: none;
+}
+
+.ac-container article {
+  background: rgb(126, 135, 138);
+  margin-top: -1px;
+  overflow: hidden;
+  height: 0px;
+  position: relative;
+  z-index: 10;
+  transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+}
+
+.ac-container article p {
+  // border-radius: 0  0 8px 8px;
+  line-height: 23px;
+  font-size: 14px;
+  padding: 20px;
+  // box-shadow: black;
+}
+
+.ac-container input:checked ~ article {
+  transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+  box-shadow: 0px 0px 0px 1px rgba(155, 155, 155, 0.3);
+}
+
+.ac-container input:checked ~ article.ac-medium {
+  height: 180px;
+}
+
+// .ac-container input:checked~article.ac-small {
+//   height: 140px;
+// }
+
+// .ac-container input:checked~article.ac-large {
+//   height: 230px;
+// }
+
+// In case a different sized article is needed when the content is added. You can have multiple sized ones at the same time
+
+// accordion skill page
+
+#index-main {
+  font-family: "Shadows Into Light", sans-serif;
+  /* font-family: Arial, Helvetica, sans-serif; */
+  height: 95vh;
+  font-size: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+#title-box {
+  /* height: 100%; */
+  width: 70%;
+  text-align: center;
+  color: aliceblue;
+  border: 3.4px white solid;
+  border-radius: 10px;
+  padding: 20px 60px;
+
+  /* width: 80%;
+    height: 80%; */
+}
+
+/* footer */
+
+footer {
+  color: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+footer > a {
+  margin-left: 20px;
+  padding: 10px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75));
+}
+
+footer a * {
+  padding: 0 5px;
+  vertical-align: middle;
+}
+
+a:hover {
+  color: rgb(125, 184, 211);
+}
+
+a > * {
+  transition: 0.2s ease-in-out;
+}
+
+a > img:hover {
+  -webkit-filter: opacity(0.5) drop-shadow(0 0 0 rgb(62, 194, 255));
+  filter: opacity(0.5) drop-shadow(0 0 0 rgb(62, 194, 255));
+  transform: scale(1.2);
+  /* filter: opacity(.5) drop-shadow(0 0 0 rgb(125, 184, 211) )); */
+}
+
+#soft-skills {
+  section {
+    margin: 6px;
+  }
+  h2 {
+    margin-bottom: 5px;
+  }
+}

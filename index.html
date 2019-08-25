@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="styles.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Raleway|Shadows+Into+Light&display=swap"
       rel="stylesheet"
@@ -12,37 +13,47 @@
     <title>Dan Forder Portfolio</title>
   </head>
   <body>
-    <main>
-      <section>
-        <h1>dan forder,</h1>
-        <h2><span id="typed-text"></span><span id="cursor">|</span></h2>
-      </section>
-      <section id="widget-bar">
-        <a href="https://github.com/danforder" target="_blank"
-          ><i class="fab fa-github"></i
-        ></a>
-        <a href="https://linkedin.com/in/dan-forder" target="_blank"
-          ><i class="fab fa-linkedin"></i
-        ></a>
-        <a href="https://dforder.com/music#content" target="_blank"
-          ><i class="fas fa-music"></i
-        ></a>
-      </section>
-      <section>
+    <div id="home">
+      <div id="home-main">
+        <header>
+          <section id="title-box">
+            <h1>dan forder,</h1>
+            <h2><span id="typed-text"></span><span id="cursor">|</span></h2>
+          </section>
+          <section id="widget-bar">
+            <a href="https://github.com/danforder" target="_blank"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a href="https://linkedin.com/in/dan-forder" target="_blank"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <a href="https://dforder.com/music#content" target="_blank"
+              ><i class="fas fa-music"></i
+            ></a>
+          </section>
+        </header>
+      </div>
+      <section id="home-footer">
         <a href="https://goo.gl/maps/9GdrEnMT5FREMARc6" target="_blank">
-          <i class="fas fa-2x fa-camera-retro"></i>
-          <span>Mt. Manaia, Whangerei Heads, New Zealand</span>
+          <div>
+            <i class="fas fa-2x fa-camera-retro"></i>
+          </div>
+          <p>Mt. Manaia, Whangerei Heads, New Zealand</p>
+        </a>
+        <a href="#portfolio">
+          <h2>See My Portfolio</h2>
+          <i class="fas fa-chevron-down"></i>
         </a>
       </section>
-      <main>
-        <article>Portfolio Item #1</article>
-        <article>Portfolio Item #2</article>
-        <article>Portfolio Item #3</article>
-        <article>Portfolio Item #4</article>
-        <article>Portfolio Item #5</article>
-        <article>Portfolio Item #6</article>
-      </main>
+    </div>
+    <main id="portfolio">
+      <article>Portfolio Item #1</article>
+      <article>Portfolio Item #2</article>
+      <article>Portfolio Item #3</article>
+      <article>Portfolio Item #4</article>
+      <article>Portfolio Item #5</article>
+      <article>Portfolio Item #6</article>
     </main>
-    <script src="app.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>
