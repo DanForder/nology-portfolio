@@ -3,6 +3,7 @@
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -182,7 +183,8 @@ body #home #home-footer #see-portfolio {
 }
 
 body #portfolio {
-  background: #354f97;
+  background: aliceblue;
+  color: #354f97;
   min-height: 100vh;
   width: 100vw;
   padding: 0 25px;
@@ -204,7 +206,6 @@ body #portfolio h2 {
 }
 
 body #portfolio section {
-  border: aliceblue 2px solid;
   width: 100%;
   height: 100%;
   display: -webkit-box;
@@ -217,10 +218,15 @@ body #portfolio section {
 }
 
 body #portfolio section article {
-  margin: 10px;
-  min-width: 250px;
-  width: 45%;
-  min-height: 300px;
+  border: #3b4b68 2px solid;
+  border-radius: 25px;
+  width: 250px;
+  min-width: 30%;
+  min-height: 200px;
+  margin: 25px 15px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#3b4b68), to(#3b4b68));
+  background-image: linear-gradient(#3b4b68, #3b4b68);
+  color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -231,18 +237,57 @@ body #portfolio section article {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  text-align: center;
+  padding: 10px;
+}
+
+body #portfolio section article div {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-body #portfolio section article #pokedex-img {
+body #portfolio section article div nav {
   width: 100%;
-  height: 100%;
-  background-image: url("img/pokedex-default.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+body #portfolio section article div nav a {
+  border: #354f97 2px solid;
+  background-color: transparent;
+  border-radius: 25px;
+  width: 45%;
+  min-width: 175px;
+  max-width: 200px;
+  margin-top: 5px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  font-family: "Shadows Into Light", sans-serif;
+  font-size: 1.2em;
+}
+
+body #portfolio section article div nav a:hover, body #portfolio section article div nav a:focus {
+  background-color: #354f97;
+  border: #354f97 2px solid;
 }
 
 @media only screen and (max-width: 660px) {

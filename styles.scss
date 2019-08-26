@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -126,7 +127,8 @@ body {
   }
 
   #portfolio {
-    background: rgb(53, 79, 151);
+    background: aliceblue;
+    color: #354f97;
     min-height: 100vh;
     width: 100vw;
 
@@ -142,7 +144,7 @@ body {
     }
 
     section {
-      border: aliceblue 2px solid;
+      // border: red 2px solid;
       width: 100%;
       height: 100%;
       display: flex;
@@ -150,27 +152,96 @@ body {
       flex-wrap: wrap;
 
       article {
-        // border: aliceblue 2px solid;
-        margin: 10px;
-        min-width: 250px;
-        // width: 30%;
-        width: 45%;
-        min-height: 300px;
+        border: #3b4b68 2px solid;
+        border-radius: 25px;
+
+        width: 250px;
+        min-width: 30%;
+
+        min-height: 200px;
+
+        margin: 25px 15px;
+
+        // background-image: url(/img/purepng.webp);
+        // background-position: center;
+        // background-size: contain;
+        // background-repeat: no-repeat;
+        // background-color: rgb(71, 99, 99);
+        background-image: linear-gradient(#3b4b68, #3b4b68);
+
+        color: white;
 
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        text-align: center;
 
-        #pokedex-img {
-          width: 100%;
+        padding: 10px;
+
+        div {
+          // border: green 2px solid;
           height: 100%;
-          background-image: url("img/pokedex-default.png");
-          background-position: center;
-          background-repeat: no-repeat;
-          background-size: contain;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          align-items: center;
+
+          nav {
+            width: 100%;
+
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+
+            a {
+              border: #354f97 2px solid;
+              background-color: transparent;
+              border-radius: 25px;
+              width: 45%;
+              min-width: 175px;
+              max-width: 200px;
+
+              margin-top: 5px;
+
+              transition: all 0.2s ease-in-out;
+
+              font-family: "Shadows Into Light", sans-serif;
+              font-size: 1.2em;
+
+              &:hover,
+              &:focus {
+                // color: #354f97;
+                background-color: #354f97;
+                border: #354f97 2px solid;
+              }
+            }
+          }
         }
       }
+
+      // article {
+      //   // border: aliceblue 2px solid;
+      //   margin: 10px;
+      //   min-width: 250px;
+      //   // width: 30%;
+      //   width: 45%;
+      //   min-height: 300px;
+
+      //   display: flex;
+      //   flex-direction: column;
+      //   justify-content: center;
+      //   align-items: center;
+
+      //   #pokedex-img {
+      //     width: 100%;
+      //     height: 100%;
+      //     background-image: url("img/pokedex-default.png");
+      //     background-position: center;
+      //     background-repeat: no-repeat;
+      //     background-size: contain;
+      //   }
+      // }
     }
   }
 }
