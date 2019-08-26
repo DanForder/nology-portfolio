@@ -1,0 +1,19 @@
+
+pokedex.dforder.com
+An online Pokedex & Who's That Pokemon? game with leaderboard functionality.
+React, SCSS, Firebase
+
+app.hedira.io
+An application designed to help users take better care of their indoor plants.
+
+todolist.dforder.com
+A simple todo list made using React & Firebase, a user can sign in and work on their custom tasks.
+
+music library
+A Music Library created with React that allows a user to view albums by genre.
+
+hostilealiens.dforder.com
+An Space-Invader style game where a player must destroy all alien ships to save the world.
+
+tugofwar.dforder.com
+This two-player tug-of-war twister crossover game will test your friendship and stamina! Created with HTML, CSS, Vanilla Javascript.

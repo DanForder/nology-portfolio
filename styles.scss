@@ -151,23 +151,46 @@ body {
       justify-content: space-around;
       flex-wrap: wrap;
 
+      #pokedex-image {
+        background-image: url(/img/Pokemaster.png);
+      }
+
+      #hedira-image {
+        background-image: url(/img/Hedira.png);
+      }
+
+      #todo-image {
+        background-image: url(/img//Pokemaster.png);
+      }
+
+      #pokedex-image:hover,
+      #pokedex-image:focus,
+      #hedira-image:hover,
+      #hedira-image:focus,
+      #todo-image:hover,
+      #todo-imagefocus {
+        background-image: linear-gradient(#3b4b68, #3b4b68);
+        div {
+          display: flex;
+        }
+      }
+
       article {
-        border: #3b4b68 2px solid;
-        border-radius: 25px;
+        border: transparent 2px solid;
+        border-radius: 35px;
 
         width: 250px;
         min-width: 30%;
+        max-width: 500px;
 
         min-height: 200px;
 
         margin: 25px 15px;
 
-        // background-image: url(/img/purepng.webp);
-        // background-position: center;
-        // background-size: contain;
-        // background-repeat: no-repeat;
-        // background-color: rgb(71, 99, 99);
-        background-image: linear-gradient(#3b4b68, #3b4b68);
+        background-position: center;
+        background-size: auto;
+        background-repeat: repeat;
+        background-color: transparent;
 
         color: white;
 
@@ -181,7 +204,7 @@ body {
         div {
           // border: green 2px solid;
           height: 100%;
-          display: flex;
+          display: none;
           flex-direction: column;
           justify-content: space-around;
           align-items: center;
