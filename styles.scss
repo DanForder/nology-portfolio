@@ -48,7 +48,7 @@ body {
         height: 75%;
         min-height: 300px;
         max-height: 400px;
-        font-size: 2em;
+        font-size: 1.8em;
         // border: 3.4px black solid;
         display: flex;
         justify-content: space-around;
@@ -107,6 +107,7 @@ body {
       #image-caption {
         display: flex;
         align-items: flex-end;
+
         a {
           display: flex;
           align-items: center;
@@ -122,6 +123,11 @@ body {
         flex-direction: column;
         align-items: center;
         text-align: center;
+
+        &:hover,
+        &:focus {
+          transform: scale(0.95);
+        }
       }
     }
   }
@@ -146,6 +152,7 @@ body {
     section {
       // border: red 2px solid;
       width: 100%;
+      max-width: 1500px;
       height: 100%;
       display: flex;
       justify-content: space-around;
@@ -201,7 +208,10 @@ body {
       #morse-image:active {
         background-image: linear-gradient(#3b4b68, #3b4b68);
         div {
-          display: flex;
+          transition: 0.5s ease-in-out all;
+          // display: flex;
+          opacity: 1;
+          transform: scale(1);
         }
       }
 
@@ -210,8 +220,7 @@ body {
         border-radius: 35px;
 
         width: 250px;
-        min-width: 30%;
-        max-width: 500px;
+        min-width: 25%;
 
         min-height: 200px;
 
@@ -219,7 +228,7 @@ body {
 
         background-position: center;
         background-size: auto;
-        background-repeat: repeat;
+        background-repeat: no-repeat;
         background-color: transparent;
 
         color: white;
@@ -234,10 +243,17 @@ body {
         div {
           // border: green 2px solid;
           height: 100%;
-          display: none;
           flex-direction: column;
           justify-content: space-around;
           align-items: center;
+
+          // display: none;
+          display: flex;
+
+          transform: scale(0.8);
+
+          //for transitions
+          opacity: 0;
 
           nav {
             width: 100%;
