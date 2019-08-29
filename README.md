@@ -2,6 +2,8 @@
 ### Overview
 This was created during week 10 and 11 of the _nology front-end coding bootcamp to showcase the work completed during the course.
 
+View the application live [here](http://portfolio.dforder.com)
+
 ### Tech Used
 - HTML
 - SCSS
