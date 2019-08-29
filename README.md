@@ -7,7 +7,7 @@ This was created during week 10 and 11 of the _nology front-end coding bootcamp 
 - SCSS
 - TypeScript
 
-## How to
+### How to
 - Clone the repo
 - Convert styles.scss file to styles.css
 - Convert main.ts file to main.js
