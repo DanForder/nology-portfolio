@@ -168,7 +168,7 @@ body {
       // max-height: 75vh;
       // min-height: 300px;
 
-      align-items: center;
+      // align-items: center;
 
       margin-bottom: 50px;
 
@@ -178,14 +178,15 @@ body {
         justify-content: space-between;
         align-items: center;
 
-        height: 400px;
+        min-height: 300px;
         width: 500px;
         padding: 20px;
         margin: 20px;
 
-        border: #354f97 4px solid;
+        // border: #354f97 4px solid;
         border-radius: 25px;
-        // background-color: white;
+        background-color: #354f97;
+        color: white;
 
         article {
           margin: 10px 0 0 0;
@@ -238,7 +239,27 @@ body {
       #pokedex-image:hover,
       #pokedex-image:active,
       #hedira-image:hover,
-      #hedira-image:active,
+      #hedira-image:active {
+        background-image: linear-gradient(
+          rgb(245, 245, 245),
+          rgb(245, 245, 245)
+        );
+        color: #354f97;
+        div {
+          transition: 0.5s ease-in-out all;
+          // display: flex;
+          opacity: 1;
+          transform: scale(1);
+          a {
+            color: #354f97;
+            &:hover,
+            &:focus {
+              color: rgb(245, 245, 245);
+            }
+          }
+        }
+      }
+
       #tug-image:hover,
       #tug-image:active,
       #todo-image:hover,
