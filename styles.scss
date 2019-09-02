@@ -166,13 +166,31 @@ body {
     #featured-projects {
       // border: green 2px solid;
       // max-height: 75vh;
-      min-height: 300px;
+      // min-height: 300px;
+
       align-items: center;
 
       margin-bottom: 50px;
 
-      article {
-        min-width: 300px;
+      .featured-project {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        height: 400px;
+        width: 500px;
+        padding: 20px;
+        margin: 20px;
+
+        border: #354f97 4px solid;
+        border-radius: 25px;
+        // background-color: white;
+
+        article {
+          margin: 10px 0 0 0;
+          width: 100%;
+        }
       }
     }
 
