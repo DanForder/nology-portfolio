@@ -13,11 +13,10 @@ const captionArray: string[] = [
   "world explorer",
   "home chef extraordinaire",
   "admirer of middle earth",
-  "peanut butter advocate"
+  "peanut butter advocate",
+  "ravishing runner",
 ];
 let currentCaptionArray: string[] = captionArray.slice(1);
-// console.log(captionArray);
-// console.log(currentCaptionArray);
 let captionSpeed: number = 100;
 let resetSpeed: number = 4000;
 let index: number = 0;
