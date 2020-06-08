@@ -20,7 +20,7 @@ body {
 
   #home {
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)),
-      url(img/whangerei-heads.jpg);
+      url(./img/whangerei-heads.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -211,35 +211,35 @@ body {
       flex-wrap: wrap;
 
       #pokedex-image {
-        background-image: url(/img/Pokemaster.png);
+        background-image: url(./img/Pokemaster.png);
       }
 
       #hedira-image {
-        background-image: url(/img/Hedira.png);
+        background-image: url(./img/Hedira.png);
       }
 
       #tug-image {
-        background-image: url(/img/TugNTwist.png);
+        background-image: url(./img/TugNTwist.png);
       }
 
       #todo-image {
-        background-image: url(/img/ToDo.png);
+        background-image: url(./img/ToDo.png);
       }
 
       #portfolio-image {
-        background-image: url(/img/Portfolio.png);
+        background-image: url(./img/Portfolio.png);
       }
 
       #music-library-image {
-        background-image: url(/img/Music.png);
+        background-image: url(./img/Music.png);
       }
 
       #alien-image {
-        background-image: url(/img/Aliens.png);
+        background-image: url(./img/Aliens.png);
       }
 
       #morse-image {
-        background-image: url(/img/Morse.png);
+        background-image: url(./img/Morse.png);
       }
 
       #pokedex-image:hover,
