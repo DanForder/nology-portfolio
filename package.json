@@ -1,8 +1,0 @@
-{
-  "dependencies": {
-    "firebase": "^6.5.0",
-    "firebase-tools": "^7.3.0",
-    "tsc": "^1.20150623.0",
-    "typescript": "^3.5.3"
-  }
-}
